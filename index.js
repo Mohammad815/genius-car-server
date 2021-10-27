@@ -4,7 +4,7 @@ const { MongoClient } = require('mongodb');
 const ObjectId = require('mongodb').ObjectId
 require('dotenv').config()
 app = express();
-const port = process.env.PORT || 6000;
+const port = process.env.PORT || 5000;
 //middleWare
 app.use(cors())
 app.use(express.json())
@@ -52,7 +52,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('This is Car Mechanic Site!')
   })
 
   app.listen(port, () => {
